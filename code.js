@@ -25,6 +25,8 @@ function fib(n)
         // and n, so we know when our fibArray is of appropriate length.
         return calcFib(fibArray, n);
     }
+    
+    return fibArray;
 }
 
 function calcFib(fibArray, n)
