@@ -27,3 +27,23 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+## My Invariant
+
+The invariant for my program is fibArray. Prior to each recursive call of
+calcFib(fibArray, n), fibArray contains the entire preceding sequence of
+Fibonacci numbers. Beyond the base cases of fibArray[0] == 0, and fibArray[1]
+== 1, for any n, which is an element of the natural numbers, fibArray[n] can be
+calcualated as fibArray[n - 1] + fibArray[n - 2], after which fibArray[n + 1]
+can be calculated as fibArray[n - 1 + 1] + fibArray[n - 2 + 1], etc.
+
+## Sources
+
+Before I could understand recursion, I needed to understand recursion, so I used
+the following source to help understand recursion:  
+
+https://www.geeksforgeeks.org/introduction-to-recursion-2/#  
+
+## Plagiarism Notice
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
