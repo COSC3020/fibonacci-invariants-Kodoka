@@ -42,5 +42,3 @@ function calcFib(fibArray, n)
         return calcFib(fibArray, n);
     }
 }
-
-console.log(fib(7));
