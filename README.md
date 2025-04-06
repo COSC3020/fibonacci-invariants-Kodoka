@@ -37,17 +37,6 @@ If $fibArray.length \geq 1, fibArray[1] == 1$.
 For every index, $i$, where $2 \leq i < fibArray.length: fibArray[i] ==
 fibArray[i - 1] + fibArray[i - 2]$.  
 
-At The beginning of the $nth$ recursive call, it holds true that each element of
-fibArray, for $2 \leq n < fibArray.length$ will be equivalent to $fibArray[n - 1] +
-fibArray[n - 2]$. For $n = 0, 1: fibArray[n]$ will be equivalent to $0, 1$
-respectively.
-invariant for my program is fibArray. Prior to each recursive call of
-calcFib(fibArray, n), fibArray contains the entire preceding sequence of
-Fibonacci numbers. Beyond the base cases of fibArray[0] == 0, and fibArray[1]
-== 1, for any n, which is an element of the natural numbers, fibArray[n] can be
-calcualated as fibArray[n - 1] + fibArray[n - 2], after which fibArray[n + 1]
-can be calculated as fibArray[n - 1 + 1] + fibArray[n - 2 + 1], etc.
-
 ## Sources
 
 Before I could understand recursion, I needed to understand recursion, so I used
