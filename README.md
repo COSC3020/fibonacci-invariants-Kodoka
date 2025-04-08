@@ -33,7 +33,7 @@ your answer to this markdown file.
 At the beginning of each recursive call, it is true that the elements of fibArray
 will satisfy the following conditions:  
 If $fibArray.length \geq 0, fibArray[0] == 0$.  
-If $fibArray.length \geq 1, fibArray[1] == 1$. 
+If $fibArray.length \geq 1, fibArray[1] == 1$.  
 For every index, $i$, where $2 \leq i < fibArray.length: fibArray[i] ==
 fibArray[i - 1] + fibArray[i - 2]$.  
 
