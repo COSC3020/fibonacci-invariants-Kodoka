@@ -30,12 +30,14 @@ your answer to this markdown file.
 
 ## My Invariant
 
-At the beginning of each recursive call, it is true that the elements of fibArray
-will satisfy the following conditions:  
-If $fibArray.length \geq 0, fibArray[0] == 0$.  
-If $fibArray.length \geq 1, fibArray[1] == 1$.  
-For every index, $i$, where $2 \leq i < fibArray.length: fibArray[i] ==
+Before each recursive call, in which we add the next number in the Fibonacci
+sequence to the fibArray we'll let k = fibArray.length, then:  
+If $k \geq 1$, then $fibArray[0] = 0$.  
+If $k \geq 1$, then $fibArray[1] = 1$.  
+For every index, $i$, where $2 \leq i < k$, $fibArray[i] =
 fibArray[i - 1] + fibArray[i - 2]$.  
+So my invariant is the property that all elements computed so far, and stored
+within fibArray, satisfy the Fibonacci relationship.
 
 ## Sources
 
